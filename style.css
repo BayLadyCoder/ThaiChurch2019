@@ -155,10 +155,16 @@ a {
 }
 
 hr {
-    color: aqua;
-    font-size: 10px;
+    width: 50%;
+    /* color: rgb(223, 223, 223); */
+    height: 1px;
+    background-color: rgb(230, 230, 230);
 }
 
 .textbox {
     width: 680px;
+}
+
+#img-cross {
+    width: 25%;
 }
