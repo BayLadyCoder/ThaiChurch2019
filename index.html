@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Home - TCCDC</title>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg sticky-top w-100 z-index-2">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">Thai Christian Church DC</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span> -->
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Events</a>
+                    <a class="nav-item nav-link" href="#">Ministries</a>
+                    <a class="nav-item nav-link" href="#">Gallery</a>
+
+
+                    <a id="btn-give" class="nav-item nav-link btn-action" href="#">GIVE</a>
+                    <a id="btn-contact" class="nav-item nav-link btn-action" href="#">CONTACT</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="overlay"></div>
+
+
+
+    <!-- SLIDER WITH CAPTIONS -->
+    <div class="homeContainer">
+        <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#slider4" data-slide-to="0"></li>
+                <li data-target="#slider4" data-slide-to="1"></li>
+                <li data-target="#slider4" data-slide-to="2"></li>
+                <li data-target="#slider4" data-slide-to="3"></li>
+                <li data-target="#slider4" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div id="img1" class="img d-flex align-items-center justify-content-center" alt="First Slide"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Thai Christian Church DC</h1>
+                        <h2>คริสตจักรไทยดีซี</h2>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="img2" class="img d-flex align-items-center justify-content-center" alt="First Slide"></div>
+                    <div id="c-caption-2" class="carousel-caption d-none d-md-block">
+                        <h2>Sunday Service: 2pm-3.30pm</h2>
+                        <p>3910 Lorcom Lane, Arlington, Virginia 22207</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="img3" class="img d-flex align-items-center justify-content-center" alt="First Slide"></div>
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="mb-0">"I will be with you."</h2>
+                        <footer class="blockquote-footer text-white">Joshua 1:5</footer>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="img4" class="img d-flex align-items-center justify-content-center" alt="First Slide"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Love Children</h2>
+                        <p id="mt185" class="mb-0">"Whoever receives one such child in my name receives me"</p>
+                        <footer class="blockquote-footer text-white">Matthew 18:5</footer>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="img5" class="img d-flex align-items-center justify-content-center" alt="First Slide"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Our Ministries</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTROLS -->
+            <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#slider4" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <section class="container">
+            <div id="about" class="mb-4 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="pb-1">Thai Christian Church Washington DC (TCCDC)</h2>
+                <p>is the church for our family to come and enjoy our blessing time from God our father.
+                    Our vision is “Building God’s family in the DC area“.
+                    We welcome everybody to our family, because we are God’s children.
+                    He loves us and he has prepares a way before us through His Son, Jesus Christ, w
+                    e will rejoice happiness in this mortal life and be ready for the day to return
+                    to our Heavenly Father’s presence as eternal families for those who have faith
+                    in Jesus Christ.</p>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $('.carousel').carousel({
+            interval: 4000,
+            keyboard: true,
+            pause: 'hover',
+            wrap: true
+        });
+
+        $('#slider4').on('slide.bs.carousel', function () {
+            console.log('SLIDE!');
+        });
+
+        $('#slider4').on('slid.bs.carousel', function () {
+            console.log('SLID!');
+        });
+    </script>
+
+</body>
+
+</html>

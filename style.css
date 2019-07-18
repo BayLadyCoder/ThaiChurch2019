@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    /* font-family: 'Pacifico', cursive; */
+    font-size: 25px;
+    color: rgb(204, 237, 255) !important;
+}
+
+
+.overlay {
+    background-color: rgba(40, 40, 40, 0.562);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+
+.homeContainer {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px;
+    position: absolute;
+}
+
+.img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+#img1 {
+    background-image: url("img/TCCDC2019.JPG");
+}
+
+#img2 {
+    background-image: url("img/worship.jpg");
+}
+
+#img3 {
+    background-image: url("img/rainbow.jpg");
+}
+
+#img4 {
+    background-image: url("img/easter.jpg");
+}
+
+#img5 {
+    background-image: url("img/dayLaborer.jpg");
+    background-position: top;
+}
+
+.carousel-caption {
+    top: 59%;
+    transform: translateY(-50%);
+}
+
+#joshua15 {
+    font-size: 40px;
+}
+
+#c-caption-2 {
+    top: 59%;
+}
+
+
+#mt185 {
+    font-size: 22px;
+}
+
+a {
+    color: #ffffff !important;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.767);
+    position: fixed;
+}
+
+
+.nav-link {
+    margin-right: 13px;
+}
+
+/* .navbar-dark .navbar-toggler-icon {
+    background-color: rgb(196, 0, 0);
+} */
+
+.custom-toggler .navbar-toggler-icon {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.navbar-toggler {
+    width: 45px;
+    height: 39px;
+    background-color: #ffffff;
+
+
+}
+
+.navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.803);
+    margin: 1px;
+    padding: 0 !important;
+}
+
+#about {
+    padding: 0px 150px;
+}
+
+.btn-action {
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+    padding: 10px;
+    color: black !important;
+
+}
+
+#btn-give {
+    background-color: rgb(186, 206, 4);
+    margin-right: 18px;
+
+}
+
+#btn-contact {
+    background-color: rgb(152, 187, 252);
+}
