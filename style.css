@@ -123,19 +123,23 @@ a {
 
 .btn-action {
     font-family: 'Lato', sans-serif;
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 10px;
     color: black !important;
-
+    border: #000000 solid 2px;
+    width: 30%;
 }
 
 #btn-give {
+
     background-color: rgb(186, 206, 4);
     margin-right: 18px;
 
 }
 
 #btn-contact {
+
+
     background-color: rgb(152, 187, 252);
 }
 
