@@ -78,7 +78,7 @@ body {
 }
 
 a {
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
 }
 
 .navbar {
@@ -137,4 +137,17 @@ a {
 
 #btn-contact {
     background-color: rgb(152, 187, 252);
+}
+
+
+.service {
+    background-color: rgb(223, 223, 223);
+    padding: 20px 20px 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+.text-indent {
+    text-indent: 5%;
 }
