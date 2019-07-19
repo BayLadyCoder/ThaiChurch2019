@@ -9,6 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lobster|Roboto:400,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Home - TCCDC</title>
@@ -22,7 +23,7 @@
 
     <!-- SLIDER WITH CAPTIONS -->
     <div class="homeContainer">
-        <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
+        <div id="slider4" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li class="active" data-target="#slider4" data-slide-to="0"></li>
                 <li data-target="#slider4" data-slide-to="1"></li>
@@ -86,16 +87,14 @@
         <nav class="navbar navbar-expand-lg sticky-top w-100 z-index-2">
             <div class="container">
                 <a class="navbar-brand logo" href="#">Thai Christian Church DC</a>
-                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler custom-toggler m-0" type="button" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                <span>
-                    <i class="fas fa-bars"></i>
-                </span> -->
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+
+                    <div class="line-box d-flex flex-column align-items-center justify-content-around w-100 h-100">
+
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav d-flex align-items-center justify-content-center">
@@ -118,30 +117,31 @@
 
 
 
-        <!-- <section class=""> -->
-        <div id="about" class="d-flex flex-column justify-content-center align-items-center">
-            <h1 class="pb-1">Thai Christian Church DC</h1>
-            <div class="service d-flex flex-column justify-content-center align-items-center">
-                <p><strong>Worship Service:</strong> Every Sunday at 2pm</p>
-                <p>at <a href="#" class="">3910 Lorcom Lane, Arlington, Virginia 22207</a></p>
-                <p><strong>Tel:</strong> +1-240-535-4884</p>
-                <p><strong>Email:</strong> thaichurchdc@yahoo.com</p>
-            </div>
-            <img src="img/collection.jpg" alt="photo collection" class="mb-4">
-            <p class="text-justify text-indent textbox">Thai Christian Church Washington DC (TCCDC) is the church
-                for
-                our
-                family to come
-                and enjoy our
-                blessing time from God our father.
-                Our vision is “Building God’s family in the DC area“.
-                We welcome everybody to our family, because we are God’s children.
-                He loves us and he has prepares a way before us through His Son, Jesus Christ, w
-                e will rejoice happiness in this mortal life and be ready for the day to return
-                to our Heavenly Father’s presence as eternal families for those who have faith
-                in Jesus Christ.</p>
 
-            <hr />
+        <div id="worship-service" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="service d-flex flex-column justify-content-center align-items-center">
+                <h1 class="name pb-1">Thai Christian Church DC</h1>
+
+                <p><strong>Worship Service:</strong> Every Sunday at 2pm</p>
+                <p>at <span id="service-address"> 3910 Lorcom Lane, Arlington, Virginia 22207</span></p>
+
+            </div>
+            <div id="about" class="d-flex flex-column justify-content-center align-items-center pb-4 mb-4">
+                <img src="img/collection.jpg" alt="photo collection" class="mb-4">
+                <p class="text-justify text-indent textbox">Thai Christian Church Washington DC (TCCDC) is the church
+                    for
+                    our
+                    family to come
+                    and enjoy our
+                    blessing time from God our father.
+                    Our vision is “Building God’s family in the DC area“.
+                    We welcome everybody to our family, because we are God’s children.
+                    He loves us and he has prepares a way before us through His Son, Jesus Christ, w
+                    e will rejoice happiness in this mortal life and be ready for the day to return
+                    to our Heavenly Father’s presence as eternal families for those who have faith
+                    in Jesus Christ.</p>
+            </div>
+            <!-- <hr /> -->
 
             <div class="textbox">
                 <h3 class="text-center pb-3 pt-2">จุดมุ่งหมายของคริสตจักรไทย (Mission Statement)</h3>
@@ -171,8 +171,45 @@
 
 
 
+
+
+
+
+
+
+            <!--The div element for the map -->
+            <div id="map" class="" style="width:100vw;height:400px;"></div>
+
+
+
+            <!-- FOOTER -->
+            <footer class="py-3 d-flex align-items-center justify-content-between">
+                <div class="contact">
+                    <p class="footer-text mb-0 mr-3"><strong>Thai Christian Church Washington DC</strong> &#x24B8; 2019
+                    </p>
+                    <p class="footer-text mb-0 mr-3">| 3910 Lorcom
+                        Lane,
+                        Arlington,
+                        Virginia
+                        22207 |
+                        thaichurchdc@yahoo.com | +1 240-353-4884</p>
+
+                </div>
+                <div class="social-media d-flex align-items-center justify-content-end">
+                    <a href="https://www.facebook.com/groups/thaichurchdc/"><i
+                            class="fab fa-facebook-square fa-2x mr-2"></i></a>
+                    <i class="fab fa-instagram fa-2x mr-2"></i>
+                    <i class="fab fa-youtube-square fa-2x"></i>
+                </div>
+            </footer>
+
+
+
+
+
+
         </div>
-        <!-- </section> -->
+
     </div>
 
 
@@ -196,16 +233,32 @@
             pause: 'hover',
             wrap: true
         });
-
-        $('#slider4').on('slide.bs.carousel', function () {
-            console.log('SLIDE!');
-        });
-
-        $('#slider4').on('slid.bs.carousel', function () {
-            console.log('SLID!');
-        });
     </script>
 
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Thai Church DC
+            var uluru = {
+                lat: 38.902184,
+                lng: -77.108495
+            };
+            // The map, centered at Thai Church DC
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+            // The marker, positioned at Thai Church DC
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
 </body>
 
 </html>

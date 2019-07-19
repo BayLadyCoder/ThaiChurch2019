@@ -4,7 +4,6 @@ body {
 
 .logo {
     font-family: 'Lobster', cursive;
-    /* font-family: 'Pacifico', cursive; */
     font-size: 25px;
     color: rgb(204, 237, 255) !important;
     color: rgb(138, 157, 240) !important;
@@ -23,16 +22,10 @@ body {
 
 .homeContainer {
     width: 100%;
-    /* height: 70%; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     top: 0px;
-    /* bottom: -20px; */
-    /* position: absolute; */
-    margin-bottom: 0;
-    padding-bottom: 0;
-    /* background-color: rgb(221, 1, 1); */
 }
 
 .img {
@@ -82,9 +75,6 @@ body {
     font-size: 22px;
 }
 
-a {
-    /* color: #ffffff !important; */
-}
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.767);
@@ -96,34 +86,30 @@ a {
     margin-right: 13px;
 }
 
-/* .navbar-dark .navbar-toggler-icon {
-    background-color: rgb(196, 0, 0);
-} */
-
 .custom-toggler .navbar-toggler-icon {
     background-color: rgb(0, 0, 0);
 
 }
 
 .navbar-toggler {
-    width: 45px;
-    height: 39px;
-    background-color: #ffffff;
-
-
+    width: 35px;
+    height: 30px;
+    background-color: rgb(138, 157, 240) !important;
+    padding: 4px 5px;
 }
 
-.navbar-toggler .line {
+.line-box {
     width: 100%;
-    float: left;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.803);
-    margin: 1px;
-    padding: 0 !important;
+}
+
+
+#worship-service {
+    padding: 0px 150px;
 }
 
 #about {
-    padding: 0px 150px;
+    width: 100vw;
+    padding: 0px 0;
 }
 
 .btn-action {
@@ -136,28 +122,30 @@ a {
 }
 
 #btn-give {
-
-    background-color: rgb(186, 206, 4);
+    background-color: rgb(149, 222, 32);
     margin-right: 18px;
-
 }
 
 #btn-contact {
+    background-color: rgb(165, 160, 255);
+}
 
-
-    background-color: rgb(152, 187, 252);
+.name {
+    font-family: 'Lato', sans-serif;
 }
 
 
 .service {
-    background-color: rgb(223, 223, 223);
-    background-color: rgba(235, 235, 235, 0.747) !important;
-
-    padding: 20px 20px 10px 20px;
-    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    padding: 40px 10px;
+    margin-top: 25px;
     margin-bottom: 25px;
-    border-radius: 20px;
+    border-radius: 30px;
+    background-color: rgba(241, 233, 255, 0.619);
+    width: 560px;
+    color: #4c28ae;
 }
+
 
 .text-indent {
     text-indent: 5%;
@@ -165,7 +153,6 @@ a {
 
 hr {
     width: 50%;
-    /* color: rgb(223, 223, 223); */
     height: 1px;
     background-color: rgb(230, 230, 230);
 }
@@ -179,12 +166,8 @@ hr {
 }
 
 #become-member {
-    /* position: absolute; */
-    /* bottom: -320px; */
-    background-color: rgb(138, 157, 240);
+    background-color: rgb(127, 191, 24);
     width: 100vw;
-    /* height: 300px; */
-
     color: #fff;
 }
 
@@ -199,4 +182,30 @@ hr {
 #become-member-h3 {
     font-weight: bold;
     font-size: 30px;
+}
+
+.fa-bars {
+    color: rgb(29, 29, 29);
+}
+
+footer {
+    width: 100vw;
+    padding: 5px 15%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(62, 33, 211);
+}
+
+.fa-facebook-square,
+.fa-instagram,
+.fa-youtube-square,
+.footer-text {
+    color: #fff;
+}
+
+
+
+.footer-text {
+
+    font-size: 13px;
+
 }
