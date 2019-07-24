@@ -10,6 +10,11 @@ body {
 }
 
 
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 100;
+}
+
 .overlay {
     background-color: rgba(40, 40, 40, 0.562);
     width: 100vw;
